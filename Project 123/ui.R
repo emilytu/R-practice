@@ -23,13 +23,15 @@ shinyUI(fluidPage(
                    min = 1,
                    max = 50,
                    value = 30),
-       numericInput("point", "test input", value = 10)
+       numericInput("point", "test input", value = 10),
+       textInput("test", "number", value = "100")
     ),
     
     # Show a plot of the generated distribution
     mainPanel(
        plotOutput("distPlot"),
-       plotOutput("testPlot")
+       plotOutput("testPlot"),
+       textOutput ("testnumber")
     )
   )
 ))

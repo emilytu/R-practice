@@ -27,5 +27,9 @@ shinyServer(function(input, output) {
     endpoint = input$point
     plot(1:endpoint)
   })
+  #third pic 
+  output$testnumber <- renderText({
+    input$test
+  })
   
 })
